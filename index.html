@@ -1,13 +1,153 @@
-<!doctype html>
-<html lang="en">
+﻿<!doctype html>
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about-me-sample</title>
+    <meta name="theme-color" content="#090d20" />
+    <meta name="description" content="교실에서 질문하고, 연구로 가능성을 넓히는 수학교사. 교육 철학, 수학교육 연구 관심사와 프로젝트를 소개합니다." />
+    <title>[이름] — 수학, 그 너머의 가능성</title>
   </head>
   <body>
-    <div id="app"></div>
+    <a class="skip-link" href="#main">본문으로 바로가기</a>
+    <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6" /></symbol>
+        <symbol id="icon-diagonal" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12" /></symbol>
+        <symbol id="icon-spark" viewBox="0 0 24 24"><path d="m12 2 2.6 7.4L22 12l-7.4 2.6L12 22l-2.6-7.4L2 12l7.4-2.6L12 2Z" /></symbol>
+        <symbol id="icon-dialog" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 1-8 8H5l-3 3V11a9 9 0 1 1 18 0Z" /><path d="M7 9h8M7 13h5" /></symbol>
+        <symbol id="icon-orbit" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" /><ellipse cx="12" cy="12" rx="11" ry="5" transform="rotate(-40 12 12)" /></symbol>
+        <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3" /><path d="m3 6 9 7 9-7" /></symbol>
+        <symbol id="icon-link" viewBox="0 0 24 24"><path d="m10 7 3-3a5 5 0 0 1 7 7l-3 3M14 17l-3 3a5 5 0 0 1-7-7l3-3m1 6 8-8" /></symbol>
+      </defs>
+    </svg>
+    <header class="site-header">
+      <div class="header-inner container">
+        <a class="brand" href="#home" aria-label="[이름] 홈으로">
+          <span class="brand-symbol" aria-hidden="true">✳</span>
+          <span class="brand-name">[이름]<span class="brand-caption">MATH EDUCATOR</span></span>
+        </a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="navigation" aria-label="메뉴 열기"><span></span><span></span></button>
+        <nav id="navigation" aria-label="주요 메뉴">
+          <a href="#story">나의 이야기</a>
+          <a href="#research">연구 관심사</a>
+          <a href="#projects">프로젝트</a>
+          <a class="nav-contact" href="#contact">함께 이야기해요 <svg class="icon"><use href="#icon-diagonal" /></svg></a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section id="home" class="hero">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <div class="eyebrow hero-eyebrow"><span class="status-dot"></span> MATHEMATICS × EDUCATION × POSSIBILITY</div>
+            <h1>수학,<br />정답 너머의<br /><span class="gradient-text">가능성을 열다.</span><span class="heading-star" aria-hidden="true">✳</span></h1>
+            <p class="hero-statement">교실에서 질문하고,<br class="mobile-break" /> 연구로 가능성을 넓히는 수학교사</p>
+            <p class="hero-description">안녕하세요, <strong>[이름]</strong>입니다.<br />학생의 생각에서 시작해 수업과 연구로 이어지는,<br class="desktop-break" /> 수학교육의 새로운 가능성을 탐구합니다.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#story">나의 이야기 <svg class="icon"><use href="#icon-arrow" /></svg></a>
+              <a class="button button-secondary" href="#projects">연구 및 프로젝트 <svg class="icon"><use href="#icon-diagonal" /></svg></a>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <span class="art-coordinate coordinate-top">FIG. 01 — EXPLORING POSSIBILITIES</span>
+            <span class="formula formula-one">f(x) = possibility</span>
+            <span class="formula formula-two">∞</span>
+            <span class="formula formula-three">x² + y² = r²</span>
+            <span class="formula formula-four">Δ learning &gt; 0</span>
+            <div class="orbit-halo"></div>
+            <img class="orbit-image" src="/src/assets/math-orbit.svg" alt="" width="640" height="640" fetchpriority="high" />
+            <div class="art-label label-question"><span class="tiny-dot"></span> 질문에서 시작해</div>
+            <div class="art-label label-possibility"><svg class="icon"><use href="#icon-spark" /></svg> 무한한 가능성으로</div>
+            <span class="art-cross cross-one">+</span><span class="art-cross cross-two">+</span>
+            <span class="art-coordinate coordinate-bottom">( x, y, z ) → NEW PERSPECTIVES</span>
+          </div>
+          <div class="hero-bottom">
+            <a class="scroll-cue" href="#story"><span class="scroll-line"></span> SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a>
+            <span class="hero-bottom-note">하나의 질문, 무한한 연결.</span>
+          </div>
+        </div>
+      </section>
+      <div class="idea-strip" aria-hidden="true">
+        <div class="container idea-strip-inner"><span>QUESTION</span><span class="strip-star">✳</span><span>EXPLORE</span><span class="strip-star">✳</span><span>CONNECT</span><span class="strip-star">✳</span><span>BEYOND</span><span class="strip-infinity">∞</span></div>
+      </div>
+      <section id="story" class="section story-section">
+        <div class="container">
+          <div class="section-intro" data-reveal>
+            <p class="eyebrow"><span class="section-number">01</span> MY PHILOSOPHY</p>
+            <div class="section-heading-row"><h2>배움의 시작은,<br /><span class="text-blue">언제나 학생의 생각.</span></h2><p class="section-description">답을 찾는 것만큼, 질문을 만들어 가는 경험.<br />제가 수업과 연구에서 소중히 여기는 방향입니다.</p></div>
+          </div>
+          <div class="philosophy-grid">
+            <article class="philosophy-card accent-blue" data-reveal>
+              <div class="card-top"><span class="icon-tile"><svg class="icon"><use href="#icon-spark" /></svg></span><span class="card-index">01 / THINK</span></div>
+              <h3>학생의 생각에서<br />출발하는 수업</h3><p>학생이 어떻게 생각하는지 귀 기울입니다.<br />서로 다른 풀이와 작은 질문이 수업의<br class="desktop-break" /> 새로운 출발점이 됩니다.</p>
+              <span class="card-keyword">생각을 발견하다 <span aria-hidden="true">↗</span></span>
+            </article>
+            <article class="philosophy-card accent-purple" data-reveal>
+              <div class="card-top"><span class="icon-tile"><svg class="icon"><use href="#icon-dialog" /></svg></span><span class="card-index">02 / EXPLORE</span></div>
+              <h3>탐구와 대화로<br />깊어지는 수학</h3><p>스스로 탐구하고, 서로의 생각을 나눕니다.<br />함께 설명하고 질문하는 과정에서<br class="desktop-break" /> 수학적 이해가 한 걸음 더 깊어집니다.</p>
+              <span class="card-keyword">함께 의미를 만들다 <span aria-hidden="true">↗</span></span>
+            </article>
+            <article class="philosophy-card accent-pink" data-reveal>
+              <div class="card-top"><span class="icon-tile"><svg class="icon"><use href="#icon-orbit" /></svg></span><span class="card-index">03 / EXPAND</span></div>
+              <h3>기술과 함께<br />넓어지는 배움</h3><p>디지털 도구로 추상적인 생각을 연결합니다.<br />기술이 더 많은 탐구와 표현의 기회를<br class="desktop-break" /> 열어 주는 수업을 지향합니다.</p>
+              <span class="card-keyword">배움의 경계를 넓히다 <span aria-hidden="true">↗</span></span>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="research" class="section research-section">
+        <div class="container research-layout">
+          <div class="research-intro" data-reveal>
+            <p class="eyebrow"><span class="section-number">02</span> RESEARCH INTERESTS</p>
+            <h2>교실의 질문이<br /><span class="gradient-text">연구의 방향으로.</span></h2>
+            <p class="section-description">수업에서 발견한 질문을 연구로 이어 가고,<br />연구의 통찰을 다시 배움의 현장으로 연결합니다.</p>
+            <div class="research-equation" aria-hidden="true"><span>질문</span><span class="equation-plus">+</span><span>탐구</span><span class="equation-equals">=</span><span class="equation-infinity">∞</span><small>THE POSSIBILITIES OF LEARNING</small></div>
+          </div>
+          <div class="research-list">
+            <article class="research-item accent-blue" data-reveal><span class="research-index">01</span><div><span class="research-tag">MATHEMATICS &amp; TEACHER EDUCATION</span><h3>수학교육과 교사교육</h3><p>수학을 가르치고 배우는 경험을 살피며,<br class="desktop-break" /> 교사의 배움과 수업의 변화를 탐구합니다.</p><div class="tag-list"><span>수학교육</span><span>교사의 배움</span><span>수업 성찰</span></div></div><svg class="icon research-symbol"><use href="#icon-spark" /></svg></article>
+            <article class="research-item accent-purple" data-reveal><span class="research-index">02</span><div><span class="research-tag">AI &amp; DIGITAL LEARNING</span><h3>AI와 디지털 도구를 활용한 수학 수업</h3><p>AI와 디지털 도구가 수학적 탐구와<br class="desktop-break" /> 교수·학습에 열어 주는 가능성을 살펴봅니다.</p><div class="tag-list"><span>인공지능</span><span>디지털 도구</span><span>수업 설계</span></div></div><svg class="icon research-symbol"><use href="#icon-orbit" /></svg></article>
+            <article class="research-item accent-pink" data-reveal><span class="research-index">03</span><div><span class="research-tag">MATHEMATICAL THINKING</span><h3>학생의 수학적 사고와 학습 과정</h3><p>학생이 생각을 표현하고, 연결하고, 바꾸어 가는<br class="desktop-break" /> 과정에서 배움의 의미를 찾아갑니다.</p><div class="tag-list"><span>수학적 사고</span><span>학습 과정</span><span>학생의 관점</span></div></div><svg class="icon research-symbol"><use href="#icon-dialog" /></svg></article>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="section projects-section">
+        <div class="container">
+          <div class="section-intro" data-reveal><p class="eyebrow"><span class="section-number">03</span> CLASSROOM &amp; RESEARCH</p><div class="section-heading-row"><h2>생각을 연결하고,<br /><span class="text-pink">가능성을 실험하다.</span></h2><p class="section-description">수업과 연구 사이에서 이어지는 탐구의 기록.<br />이곳에 앞으로의 프로젝트를 차곡차곡 담습니다.</p></div></div>
+          <!-- 프로젝트 제목, 설명, 태그를 수정하고 링크 준비가 되면 안내를 a 태그로 바꿔 주세요. -->
+          <div class="project-grid">
+            <article class="project-card accent-blue" data-reveal>
+              <div class="project-art project-art-one" aria-hidden="true"><span class="project-art-label">01 / CLASSROOM EXPLORATION</span><div class="geometry-triangle triangle-back"></div><div class="geometry-triangle triangle-front"></div><span class="project-formula">∠A + ∠B + ∠C = 180°</span><span class="diagram-point point-a">A</span><span class="diagram-point point-b">B</span><span class="diagram-point point-c">C</span></div>
+              <div class="project-content"><span class="project-category">수업 · 탐구</span><h3>AI융합교육</h3><p>[수업의 주제와 학생들의 탐구 활동을<br class="desktop-break" /> 소개하는 내용을 입력해 주세요.]</p><div class="project-bottom"><span class="project-status"><span></span> 내용 준비 중</span><span class="pending-link">관련 링크 준비 중 <svg class="icon"><use href="#icon-diagonal" /></svg></span></div></div>
+            </article>
+            <article class="project-card accent-purple" data-reveal>
+              <div class="project-art project-art-two" aria-hidden="true"><span class="project-art-label">02 / DIGITAL POSSIBILITIES</span><div class="node-network"><i class="network-line line-one"></i><i class="network-line line-two"></i><i class="network-line line-three"></i><i class="network-line line-four"></i><span class="network-node node-center">AI</span><span class="network-node node-one">x</span><span class="network-node node-two">∑</span><span class="network-node node-three">π</span><span class="network-node node-four">f</span></div><span class="project-formula">human × technology</span></div>
+              <div class="project-content"><span class="project-category">AI · 디지털 도구</span><h3>[프로젝트 제목 02]</h3><p>[활용한 디지털 도구와 수학 수업의<br class="desktop-break" /> 아이디어를 입력해 주세요.]</p><div class="project-bottom"><span class="project-status"><span></span> 내용 준비 중</span><span class="pending-link">관련 링크 준비 중 <svg class="icon"><use href="#icon-diagonal" /></svg></span></div></div>
+            </article>
+            <article class="project-card accent-pink" data-reveal>
+              <div class="project-art project-art-three" aria-hidden="true"><span class="project-art-label">03 / THINKING IN PROGRESS</span><svg class="wave-diagram" viewBox="0 0 360 160"><path class="chart-axis" d="M20 125h320M45 145V15" /><path class="chart-curve curve-back" d="M30 120C70 120 65 45 110 60S145 130 190 75 245 100 280 40 315 45 335 20" /><path class="chart-curve" d="M30 130C75 130 65 75 110 90S155 95 190 55 245 80 280 30 310 35 335 10" /><circle cx="110" cy="90" r="4" /><circle cx="190" cy="55" r="4" /><circle cx="280" cy="30" r="4" /></svg><span class="project-formula">thinking → connecting → learning</span></div>
+              <div class="project-content"><span class="project-category">연구 · 학습 과정</span><h3>[프로젝트 제목 03]</h3><p>[연구의 질문과 살펴보고 싶은 학습 과정을<br class="desktop-break" /> 소개하는 내용을 입력해 주세요.]</p><div class="project-bottom"><span class="project-status"><span></span> 내용 준비 중</span><span class="pending-link">관련 링크 준비 중 <svg class="icon"><use href="#icon-diagonal" /></svg></span></div></div>
+            </article>
+          </div>
+          <p class="project-note"><span aria-hidden="true">✳</span> 프로젝트의 자세한 내용과 관련 링크는 추후 업데이트됩니다.</p>
+        </div>
+      </section>
+      <section id="contact" class="contact-section">
+        <div class="container contact-panel" data-reveal>
+          <div class="contact-copy"><p class="eyebrow"><span class="section-number">04</span> LET’S CONNECT</p><h2>새로운 가능성은,<br /><span class="gradient-text">대화에서 시작됩니다.</span></h2><p>수학 수업에 대한 생각부터 새로운 연구의 질문까지.<br />함께 나누고 연결할 이야기를 기다립니다.</p></div>
+          <!-- 연락처가 준비되면 임시 텍스트를 실제 주소와 링크로 바꿔 주세요.
+               이메일: <a href="mailto:실제주소">실제주소</a>
+               관련 사이트: <a href="실제URL" target="_blank" rel="noopener noreferrer">사이트 이름</a> -->
+          <div class="contact-details">
+            <div class="contact-row"><span class="contact-icon"><svg class="icon"><use href="#icon-mail" /></svg></span><div><span class="contact-label">EMAIL</span><p>[이메일 주소를 입력해 주세요]</p></div><span class="contact-placeholder">준비 중</span></div>
+            <div class="contact-row"><span class="contact-icon"><svg class="icon"><use href="#icon-link" /></svg></span><div><span class="contact-label">ELSEWHERE</span><p>[관련 사이트 링크를 추가해 주세요]</p></div><span class="contact-placeholder">준비 중</span></div>
+          </div>
+          <span class="contact-decoration" aria-hidden="true">✳</span>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer container"><a class="footer-brand" href="#home"><span aria-hidden="true">✳</span> [이름]<span class="footer-tagline">수학, 그 너머의 가능성.</span></a><p>© [이름]. All rights reserved.</p><a class="back-to-top" href="#home" aria-label="맨 위로 이동">BACK TO TOP <span aria-hidden="true">↑</span></a></footer>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
